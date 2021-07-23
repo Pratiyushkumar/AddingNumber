@@ -8,6 +8,9 @@ const mongoose = require("mongoose");
 const number = require("./routes/numbers");
 
 dotenv.config();
+
+app.use(express.json());
+
 mongoose.connect(process.env.Mongo_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

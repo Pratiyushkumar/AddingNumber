@@ -8,7 +8,7 @@ router.post("/add", async (req, res)=>{
             number2: req.body.number2
         })
         const sum = number.number1 + number.number2;
-        res.status(200).json(sum);
+        res.status(200).json({"sum": sum});
         console.log(sum)
     }
     catch(err){
